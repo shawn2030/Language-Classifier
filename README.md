@@ -1,5 +1,10 @@
 # Language-Classifier
 
+A Web-app for Language classification which takes input from user to classify whther the input sentence is English language or Dutch Language using Decision Tree and Adaboost algorithm.
+
+
+
+
 Features:
 
     if_nl_article:
