@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language Classifier</title>
+    <script>
+        function showSentence() {
+            var sentence = document.getElementById("sentence").value;
+            document.getElementById("sentenceDisplay").innerHTML = sentence;
+        }
+    </script>
+</head>
+<body>
+    <h1>Language Classifier</h1>
+    <form action="/classify" method="post">
+        <label for="sentence">Enter a sentence of at least 10 words to get better accuracy :</label><br><br>
+        <input type="text" name="sentence" id="sentence" size="210" onkeyup="showSentence()"><br><br>
+        <label for="classifier">Select a classifier:</label>
+        <input type="radio" name="classifier" value="dt" id="dt" checked>
+        <label for="dt">Decision Tree</label>
+        <input type="radio" name="classifier" value="adaboost" id="adaboost">
+        <label for="adaboost">AdaBoost</label><br><br>
+        <input type="submit" value="Classify">
+    </form>
+    <p>Sentence: <span id="sentenceDisplay"></span></p>
+</body>
+</html>
