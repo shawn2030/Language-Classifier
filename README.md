@@ -64,11 +64,7 @@ for every level of the tree i calculated the remainder as showed in the class an
 features = 7
 Depth = 8
 
-When ran on the given test.dat test examples, i got all the right predictions. 100% accuracy with the predictions on the given file.
-
 Adaboost:
 
 i tested with 4, 6, 7, 10 stumps but got a lot of wrong predictions.
 then i tried running this adaboost algorithm for 100 stumps and then got a much better result with better predictions.
-
-When ran on the given test.dat test examples, i got 8 / 10 right predictions. 80% accuracy with the predictions on the given file.
